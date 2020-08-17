@@ -40,10 +40,10 @@
 |-h|print this manual|
 
 # EXAMPLES: 
-| Keyword |
-|---|
-|-hs "..\..\InputFiles\a.jpg" 7 F  "..\..\InputFiles\a.mp3" "..\..\OutputFiles\result.jpg" -k "..\..\OutputFiles\k.txt" -r|
-|-hw "..\..\InputFiles\a.jpg" "..\..\InputFiles\100.jpg" "..\..\InputFiles\image2.png" 7 S  "asdqwe qasd sefg sdfg" -o "..\..\OutputFiles" -k "..\..\OutputFiles" -r|
+
+ -hs "..\..\InputFiles\a.jpg" 7 F  "..\..\InputFiles\a.mp3" "..\..\OutputFiles\result.jpg" -k "..\..\OutputFiles\k.txt" -r
+ 
+ -hw "..\..\InputFiles\a.jpg" "..\..\InputFiles\100.jpg" "..\..\InputFiles\image2.png" 7 S  "asdqwe qasd sefg sdfg" -o "..\..\OutputFiles" -k "..\..\OutputFiles" -r
  
  -hb -a "..\..\InputFiles" 7 F  "..\..\InputFiles\a.mp3" -o "..\..\OutputFiles" -k "..\..\OutputFiles" -r
  
