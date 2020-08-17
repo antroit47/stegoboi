@@ -14,9 +14,9 @@
 |-o [directoryPath]|this keeps all the original names and saves the files into the folderPath or current directory if folderPath is empty|
 |[-k [keyPath]]|generates a key (simplifies the process of extracting the data later). If the keyPath is empty or if it only specifies the directory, random key name will be selected|          
 |dataSpecifier|specifies the data and the type to be hidden|
-                   |S "secret data string"           for string data|
-                   |I secretImagePath                for an image|
-                   |F secretFilePath                 for a file of different type|
+                   | |S "secret data string"           for string data|
+                   | |I secretImagePath                for an image|
+                   | |F secretFilePath                 for a file of different type|
 resultTypeSpecifier = specifies the type of the data to be extracted + the path to save it
 
                    S                                for string data - displayed in console
