@@ -2,7 +2,7 @@
 
 
 # KEYWORDS IN THE USAGE SECTION:
-| Function | Description  |
+| Keyword | Description  |
 |---|---|
 |path|path to a file, enclose with " " in case it contains spaces|
 |inputImageList|paths to all input images sparated by spaces. Can be replaced by -a[ directoryPath]|
@@ -14,9 +14,9 @@
 |-o [directoryPath]|this keeps all the original names and saves the files into the folderPath or current directory if folderPath is empty|
 |[-k [keyPath]]|generates a key (simplifies the process of extracting the data later). If the keyPath is empty or if it only specifies the directory, random key name will be selected|          
 |dataSpecifier|specifies the data and the type to be hidden|
-|---|S "secret data string"           for string data|
-|---|I secretImagePath                for an image|
-|---|F secretFilePath                 for a file of different type|
+| |S "secret data string"           for string data|
+| |I secretImagePath                for an image|
+| |F secretFilePath                 for a file of different type|
 |resultTypeSpecifier | specifies the type of the data to be extracted + the path to save it|
                    S                                for string data - displayed in console
                    I extractedImagePath             for an output image 
@@ -25,6 +25,8 @@
 |keyImageDirPath|path to a directory containing all images used by a key|
 
 # USAGE:
+| Keyword | Description  |
+|---|---|
 |-i  imagePath  | enumerate info about an image|
 |-hs inputImagePath lowestBits dataSpecifier outputImagePath [-k keyPath] [-r] | hide data into a single image|
 |-hw inputImageList/-a lowestBits dataSpecifier outputImageList/-o [-k keyPath] [-r] | hide same data into multiple images (watermarking)|
@@ -38,6 +40,8 @@
 |-h|print this manual|
 
 # EXAMPLES: 
+| Keyword |
+|---|
 |-hs "..\..\InputFiles\a.jpg" 7 F  "..\..\InputFiles\a.mp3" "..\..\OutputFiles\result.jpg" -k "..\..\OutputFiles\k.txt" -r|
 |-hw "..\..\InputFiles\a.jpg" "..\..\InputFiles\100.jpg" "..\..\InputFiles\image2.png" 7 S  "asdqwe qasd sefg sdfg" -o "..\..\OutputFiles" -k "..\..\OutputFiles" -r|
  
