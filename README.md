@@ -17,61 +17,29 @@
 |---|S "secret data string"           for string data|
 |---|I secretImagePath                for an image|
 |---|F secretFilePath                 for a file of different type|
-resultTypeSpecifier = specifies the type of the data to be extracted + the path to save it
-
+|resultTypeSpecifier | specifies the type of the data to be extracted + the path to save it|
                    S                                for string data - displayed in console
-                   
                    I extractedImagePath             for an output image 
-                   
                    F extractedFilePath              for an output file of different type
-                   
-[-r]                = -r introduces random fill on all remaining free space in an image 
-                      after the data to hide runs out
-                      
-keyImageDirPath = path to a directory containing all images used by a key
-                  
-                  
+|[-r]|-r introduces random fill on all remaining free space in an image after the data to hide runs out|
+|keyImageDirPath|path to a directory containing all images used by a key|
+
 # USAGE:
+|-i  imagePath  | enumerate info about an image|
+|-hs inputImagePath lowestBits dataSpecifier outputImagePath [-k keyPath] [-r] | hide data into a single image|
+|-hw inputImageList/-a lowestBits dataSpecifier outputImageList/-o [-k keyPath] [-r] | hide same data into multiple images (watermarking)|
+|-hb inputImageList/-a lowestBits dataSpecifier outputImageList/-o [-k keyPath] [-r] | split larger amount of data acros multiple images (their order matters for correct extraction)|       
+|-rs inputImagePath lowestBits dataLength resultTypeSpecifier|read the data from a single image|
+|-rw inputImageList/-a lowestBits dataLength resultTypeSpecifier | read data from multiple images and check if its the same (watermark checking)|
+|-rb inputImageList/-a lowestBits dataLength resultTypeSpecifier|read and combine larger data across multiple images|
+|-rk keyPath keyImageDirPath [resultDirectoryPath]|reading the data from the sources specified by the key. In case the extracted data is an image/file, the resultDirectoryPath will be used to save it.|
+|-c imagePath1 imagePath2 [-p]|compare two images of the same dimensions for difference. -p makes the difference progressive (the bigger the differrence in pixels, the lighter the color) with -p left out, any difference will be a white pixel|
+|-v|print version number|
+|-h|print this manual|
 
--i  imagePath  = enumerate info about an image
-
--hs inputImagePath lowestBits dataSpecifier outputImagePath [-k keyPath] [-r] 
-       = hide data into a single image
-       
--hw inputImageList/-a lowestBits dataSpecifier outputImageList/-o [-k keyPath] [-r] 
-       = hide same data into multiple images (watermarking)
-       
--hb inputImageList/-a lowestBits dataSpecifier outputImageList/-o [-k keyPath] [-r] 
-       = split larger amount of data acros multiple images (their order matters for correct extraction)
-       
--rs inputImagePath lowestBits dataLength resultTypeSpecifier      
-       = read the data from a single image
-       
--rw inputImageList/-a lowestBits dataLength resultTypeSpecifier        
-       = read data from multiple images and check if its the same (watermark checking)
-       
--rb inputImageList/-a lowestBits dataLength resultTypeSpecifier        
-       = read and combine larger data across multiple images
-       
--rk keyPath keyImageDirPath [resultDirectoryPath]       
-       = reading the data from the sources specified by the key 
-         In case the extracted data is an image/file, the resultDirectoryPath will be used to save it.
-         
--c imagePath1 imagePath2 [-p]   
-       = compare two images of the same dimensions for difference
-         -p makes the difference progressive(the bigger the differrence in pixels, the lighter the color)
-         with -p left out, any difference will be a white pixel
-         
--v     = print version number
-
--h     = print this manual
-
-
-# EXAMPLES:
- 
- -hs "..\..\InputFiles\a.jpg" 7 F  "..\..\InputFiles\a.mp3" "..\..\OutputFiles\result.jpg" -k "..\..\OutputFiles\k.txt" -r
- 
- -hw "..\..\InputFiles\a.jpg" "..\..\InputFiles\100.jpg" "..\..\InputFiles\image2.png" 7 S  "asdqwe qasd sefg sdfg" -o "..\..\OutputFiles" -k "..\..\OutputFiles" -r
+# EXAMPLES: 
+|-hs "..\..\InputFiles\a.jpg" 7 F  "..\..\InputFiles\a.mp3" "..\..\OutputFiles\result.jpg" -k "..\..\OutputFiles\k.txt" -r|
+|-hw "..\..\InputFiles\a.jpg" "..\..\InputFiles\100.jpg" "..\..\InputFiles\image2.png" 7 S  "asdqwe qasd sefg sdfg" -o "..\..\OutputFiles" -k "..\..\OutputFiles" -r|
  
  -hb -a "..\..\InputFiles" 7 F  "..\..\InputFiles\a.mp3" -o "..\..\OutputFiles" -k "..\..\OutputFiles" -r
  
