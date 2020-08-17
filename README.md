@@ -18,9 +18,9 @@
 | |I secretImagePath                for an image|
 | |F secretFilePath                 for a file of different type|
 |resultTypeSpecifier | specifies the type of the data to be extracted + the path to save it|
-                   S                                for string data - displayed in console
-                   I extractedImagePath             for an output image 
-                   F extractedFilePath              for an output file of different type
+| |S                                for string data - displayed in console
+| |I extractedImagePath             for an output image 
+| |F extractedFilePath              for an output file of different type
 |[-r]|-r introduces random fill on all remaining free space in an image after the data to hide runs out|
 |keyImageDirPath|path to a directory containing all images used by a key|
 
