@@ -41,18 +41,18 @@
 
 # EXAMPLES: 
 
- -hs "..\..\InputFiles\a.jpg" 7 F  "..\..\InputFiles\a.mp3" "..\..\OutputFiles\result.jpg" -k "..\..\OutputFiles\k.txt" -r
+ -hs "..\\..\InputFiles\a.jpg" 7 F  "..\\..\InputFiles\a.mp3" "..\\..\OutputFiles\result.jpg" -k "..\\..\OutputFiles\k.txt" -r
  
- -hw "..\..\InputFiles\a.jpg" "..\..\InputFiles\100.jpg" "..\..\InputFiles\image2.png" 7 S  "asdqwe qasd sefg sdfg" -o "..\..\OutputFiles" -k "..\..\OutputFiles" -r
+ -hw "..\\..\InputFiles\a.jpg" "..\\..\InputFiles\100.jpg" "..\\..\InputFiles\image2.png" 7 S  "asdqwe qasd sefg sdfg" -o "..\\..\OutputFiles" -k "..\\..\OutputFiles" -r
  
- -hb -a "..\..\InputFiles" 7 F  "..\..\InputFiles\a.mp3" -o "..\..\OutputFiles" -k "..\..\OutputFiles" -r
+ -hb -a "..\\..\InputFiles" 7 F  "..\\..\InputFiles\a.mp3" -o "..\\..\OutputFiles" -k "..\\..\OutputFiles" -r
  
- -rs "..\..\OutputFiles\result.jpg" 7 20654 I "..\\..\OutputFiles\secret.jpg"
+ -rs "..\\..\OutputFiles\result.jpg" 7 20654 I "..\\..\OutputFiles\secret.jpg"
  
- -rw -a "..\..\OutputFiles" 7 232 F "..\..\OutputFiles\result.txt"
+ -rw -a "..\\..\OutputFiles" 7 232 F "..\\..\OutputFiles\result.txt"
  
- -rb -a "..\..\OutputFiles" 1 45 S
+ -rb -a "..\\..\OutputFiles" 1 45 S
  
- -rk "..\..\OutputFiles\k.txt" "..\..\OutputFiles" "..\..\OutputFiles"
+ -rk "..\\..\OutputFiles\k.txt" "..\\..\OutputFiles" "..\\..\OutputFiles"
 
- -c "..\..\InputFiles\a.jpg" "..\..\InputFiles\a - Copy.jpg" "..\..\OutputFiles\result.png"
+ -c "..\\..\InputFiles\a.jpg" "..\\..\InputFiles\a - Copy.jpg" "..\\..\OutputFiles\result.png"
