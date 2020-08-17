@@ -2,13 +2,11 @@
 
 
 # KEYWORDS IN THE USAGE SECTION:
-
-path           = path to a file, enclose with " " in case it contains spaces.
-
-inputImageList = paths to all input images sparated by spaces. 
-                 Can be replaced by -a[ directoryPath]
-
--a [directoryPath] = this reads all .png, .bmp, .jpg files in specified folder
+| Function | Description  |
+|---|---|
+| path | path to a file, enclose with " " in case it contains spaces |
+|inputImageList|paths to all input images sparated by spaces. Can be replaced by -a[ directoryPath]|
+|-a [directoryPath]|this reads all .png, .bmp, .jpg files in specified folder|
                      (current folder if folderPath is empty)
                      
 directoryPath    = path to a directory (trailing \\ is not necessary), enclose in " " if it 
