@@ -1,7 +1,7 @@
 # Stegoboi 1.0
 
 
-#KEYWORDS IN THE USAGE SECTION:
+# KEYWORDS IN THE USAGE SECTION:
 
 path           = path to a file, enclose with " " in case it contains spaces.
 
