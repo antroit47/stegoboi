@@ -1,16 +1,28 @@
 # Stegoboi 1.0
 
-KEYWORDS IN THE USAGE SECTION:
+
+#KEYWORDS IN THE USAGE SECTION:
+
 path           = path to a file, enclose with " " in case it contains spaces.
+
 inputImageList = paths to all input images sparated by spaces. 
+
                  Can be replaced by -a[ directoryPath]
+
 -a [directoryPath] = this reads all .png, .bmp, .jpg files in specified folder
+
                      (current folder if folderPath is empty)
+                     
 directoryPath    = path to a directory (trailing \\ is not necessary), enclose in " " if it 
+
                    contains spaces (do not type the trailing \\ in this case)
+                   
 lowestBits       = int (0-8), the least signifficant color bits which are used to hide/extract the data
+
 dataLength       = the length of the hidden data needed for its extraction
+
 outputImageList  = paths to all output images sparated by spaces. 
+
                    Can be replaced by -o [directoryPath]
 -o [directoryPath] = this keeps all the original names and saves the files into the folderPath
                      or current directory if folderPath is empty
