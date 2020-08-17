@@ -47,7 +47,7 @@
  
  -hb -a "..\..\InputFiles" 7 F  "..\..\InputFiles\a.mp3" -o "..\..\OutputFiles" -k "..\..\OutputFiles" -r
  
- -rs "..\..\OutputFiles\result.jpg" 7 20654 I "..\..\OutputFiles\secret.jpg"
+ -rs "..\..\OutputFiles\result.jpg" 7 20654 I "..\\..\OutputFiles\secret.jpg"
  
  -rw -a "..\..\OutputFiles" 7 232 F "..\..\OutputFiles\result.txt"
  
