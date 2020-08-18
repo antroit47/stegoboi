@@ -1,7 +1,7 @@
 # Stegoboi 1.0
-A steganotgraphic tool which can hide and retrieve data into the 'n' least signifficant bits of the three colors of each pixel in an image. The data can be either strings or files. For any hinding operation, a key can be created, which can simplify the process of reading the hidden data. 
+A steganotgraphic tool made with C# which can hide and retrieve data into the 'n' least signifficant bits of the three colors of each pixel in an image. The data can be either strings or files. For any hinding operation, a key can be created, which can simplify the process of reading the hidden data. 
 
-Read the USAGE section for all valid commands/functions. Keywords from the USAGE section are explained in the section above it. 
+Read the USAGE section for all valid commands/functions. Keywords from the USAGE section are explained in the section above it. Tested on Windows, might run on Linux too, but was not tested.
 
 # KEYWORDS IN THE USAGE SECTION:
 | Keyword | Description  |
